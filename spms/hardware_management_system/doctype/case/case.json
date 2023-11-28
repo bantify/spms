@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-27 17:33:29.680712",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "case_section",
+  "slogan",
+  "assignee",
+  "create_date",
+  "status",
+  "domain",
+  "category",
+  "vendor_reference_id",
+  "column_break_ccko",
+  "vendor",
+  "severity",
+  "resolve_date",
+  "data_center",
+  "faulty_hardware_serial",
+  "replace_hardware_serial",
+  "section_break_uant",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_section",
+   "fieldtype": "Section Break",
+   "label": "Case"
+  },
+  {
+   "fieldname": "slogan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Slogan",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "assignee",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "Assignee",
+   "options": "vendor_employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "create_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Create Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Open\nWaiting\nClosed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "domain",
+   "fieldtype": "Select",
+   "label": "Domain",
+   "options": "DBSS\nCS\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ccko",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Link",
+   "label": "Vendor",
+   "options": "vendor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "severity",
+   "fieldtype": "Select",
+   "label": "Severity ",
+   "options": "Low\nMedium\nHigh\nCritical",
+   "reqd": 1
+  },
+  {
+   "fieldname": "resolve_date",
+   "fieldtype": "Date",
+   "label": "Resolve Date"
+  },
+  {
+   "fieldname": "data_center",
+   "fieldtype": "Select",
+   "label": "Data Center",
+   "options": "GZP\nCML\nCRP\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_uant",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "System Board\nRAM\nCPU\nHDD\nPSU\nArray Controller\nFLM\nCN\nHBA\nSFP\nCable\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "faulty_hardware_serial",
+   "fieldtype": "Data",
+   "label": "Faulty Hardware Serial",
+   "reqd": 1
+  },
+  {
+   "fieldname": "replace_hardware_serial",
+   "fieldtype": "Data",
+   "label": "Replace Hardware Serial"
+  },
+  {
+   "fieldname": "vendor_reference_id",
+   "fieldtype": "Data",
+   "label": "Vendor Reference ID",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-27 23:51:37.121639",
+ "modified_by": "Administrator",
+ "module": "Hardware Management System",
+ "name": "case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
